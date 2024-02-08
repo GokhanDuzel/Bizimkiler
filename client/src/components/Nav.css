@@ -15,7 +15,7 @@ nav {
 }
 
 nav li {
-    list-style: none;
+  list-style: none;
 }
 
 .navbar .logo {
@@ -63,12 +63,10 @@ nav li {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar .nav-elements{
-        position: relative;
-    width: 100%; /* It should span the full width of the navbar */
-    padding-left: 0; /* Reset any default padding */
-    padding-right: 0; /* Reset any default padding */
-    }
+  .navbar .nav-elements {
+    position: relative;
+    width: 50%; /* It should span the full width of the navbar */
+  }
   .navbar .nav-elements .options {
     display: none;
   }
@@ -85,10 +83,13 @@ nav li {
     position: absolute;
     top: 2.7rem;
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background: #f0ece32f;
     backdrop-filter: blur(1rem);
     border-radius: 10px;
     overflow: hidden;
+    padding-left: 0;
+    border-style: solid;
+    border-color: #f0ece327;
   }
 
   .navbar .nav-elements .dropdown-options li {
