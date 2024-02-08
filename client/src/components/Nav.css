@@ -1,0 +1,110 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0ece3;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 5rem;
+  border-radius: 10px;
+  margin-top: 0.3rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+.navbar .logo {
+  width: 10rem;
+  height: auto;
+}
+
+.navbar .nav-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navbar .options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .nav-elements .options li {
+  list-style: none;
+  padding: 1rem;
+  position: relative;
+  align-items: center;
+}
+
+.navbar .nav-elements .options li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar .nav-elements .options li a:hover {
+  color: goldenrod;
+}
+
+.navbar .nav-elements .menu-on-off {
+  display: none;
+}
+
+.navbar .menu-on-off FontAwesomeIcon {
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .nav-elements{
+        position: relative;
+    width: 100%; /* It should span the full width of the navbar */
+    padding-left: 0; /* Reset any default padding */
+    padding-right: 0; /* Reset any default padding */
+    }
+  .navbar .nav-elements .options {
+    display: none;
+  }
+
+  .navbar .nav-elements .menu-on-off {
+    display: block;
+  }
+
+  .navbar .nav-elements .dropdown-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2.7rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1rem);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .navbar .nav-elements .dropdown-options li {
+    position: relative;
+    padding: 1rem; /* Add padding to each dropdown item */
+  }
+
+  .navbar .nav-elements .dropdown-options li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar .nav-elements .dropdown-options li a:hover {
+    color: goldenrod;
+  }
+}
